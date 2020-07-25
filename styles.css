@@ -29,6 +29,13 @@ a {
 }
 
 
+/* GENERAL PARTS */
+.section-title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+}
+
+
 
 /* INTRO SCREES */
 .intro-screen {
@@ -52,4 +59,78 @@ h1.hello-world {
     max-width: 20%;
     padding: calc(1em + 1vw);
     min-width: 200px;
+}
+
+
+/* ABOUT ME */
+.about-section {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 25%;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-para {
+    width: 70%;
+    margin-right: 4em;
+}
+
+.about-quote {
+    width: 30%;
+}
+
+.about-quote-text {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-left: 10px;
+    max-width: 300px;
+    line-height: 1.75em;
+    font-size: calc(1em + 1vw);
+}
+
+.quotation-top, .quotation-bottom {
+    font-family: 'Merriweather';
+    font-size: 2em;
+    line-height: .75;
+    
+}
+
+.quotation-top {
+    margin-bottom: 0;
+}
+
+.quotation-bottom {
+    margin-top: 0;
+}
+
+
+@media (max-width: 800px) {
+    /* ABOUT ME */
+    .about-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* ABOUT ME */
+    .about-para {
+        width: 100%;
+    }
+
+    .about-quote {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-para {
+        margin-right: 2em;
+    }
 }
